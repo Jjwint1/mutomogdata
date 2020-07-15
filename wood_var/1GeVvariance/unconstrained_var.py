@@ -17,8 +17,8 @@ model = [coeffs[0]*depth**(3) for depth in depths]
 
 
 plt.plot(depths, unconstrained_vars, '+b', label='GEANT4 data')
-plt.plot(depths, model, '-r', label=f'{coeffs[0]:.3e}'+r'$d^{3}$')
-plt.title(r'Variance of muon trajectories at $E = 1$GeV, $\rho=0.6$kg m$^{-3}$')
+plt.plot(depths, model, '-r', label=f'{coeffs[0]:.3e}'+r'$\cdot d^{3}$')
+plt.title(r'Variance of muon trajectories at $E = 1$GeV, $\rho=0.6$ kg m$^{-3}$')
 plt.xlabel(r'depth / cm')
 plt.ylabel(r'$\sigma^2$ / cm$^2$')
 plt.legend()
